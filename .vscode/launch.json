@@ -1,13 +1,17 @@
 {
     "version": "0.2.0",
     "configurations": [
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Launch Program",
-        "program": "${workspaceFolder}/src/server.ts",
-        "preLaunchTask": "tsc: build - tsconfig.json",
-        "outFiles": ["${workspaceFolder}/dist/**/*.js"]
-      }
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debugger",
+            "program": "${workspaceFolder}/src/server.ts",
+            "preLaunchTask": {
+              "type": "typescript",
+              "tsconfig": "tsconfig.json",
+              "option": "watch",
+            },
+            "runtimeExecutable": "nodemon"
+          },
     ]
 }
