@@ -1,0 +1,6 @@
+{
+    "debug.javascript.autoAttachFilter": "always",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  }
